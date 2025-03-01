@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss"> 
+
+    </style>
+</head>
+<body class="bg-violet-50 ">
+   <header class="">
+    <div class="navbar bg-base-100 w-5/6 mx-auto rounded-lg bg-white ">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <img class="w-7 mr-1" src="./assets/logo.png" alt="">
+          <h1>Dev<span class="font-bold">Board</span></h1>
+        </div>
+        
+        <div class="navbar-end">
+          <a href="./index.html" src class="btn bg-blue-600 text-white">Back to Desk</a>
+         
+        </div>
+      </div>
+   </header>
+    <h1 class="flex justify-center font-bold text-3xl">Blog</h1>
+   <div class="bg-white mb-4 rounded-sm w-5/6 mx-auto p-3">
+    <h1 class="font-bold text-xl">
+        Question-1: What are the different ways to select an element in the DOM?
+    </h1>
+    <div class="border-t-2 border-dotted border-blue-50 my-2"></div>
+    <p>
+        Ans: Use getElementById() for a single element with a unique id.
+        Use querySelector() for the first match using CSS selectors.
+        Use querySelectorAll() for multiple elements with CSS selectors.
+        Use getElementsByClassName() or getElementsByTagName() for collections but prefer querySelectorAll() for more flexibility.
+    </p>
+   </div>
+   <div class="bg-white mb-4 rounded-sm w-5/6 mx-auto p-3">
+   <h1 class="font-bold text-xl">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+   <div class="border-t-2 border-dotted border-blue-50 my-2"></div>
+   <p>   Ans:innerHTML → Gets or sets HTML + text (renders HTML).
+    innerText → Gets or sets only visible text (ignores hidden text & HTML).
+    textContent → Gets or sets all text (including hidden text) but ignores HTML.</p>
+   </div>
+   <div class="bg-white mb-4 rounded-sm w-5/6 mx-auto">
+    <h1 class="font-bold text-xl">
+        Question-3: What is event delegation in the DOM?
+    </h1>
+    <div class="border-t-2 border-dotted border-blue-50 my-2"></div>
+    <p>   Ans:Event delegation is a technique where a parent element handles events for its child elements, even if they are added dynamically. This works using event bubbling.</p>
+   </div>
+   <div class="bg-white mb-4 rounded-sm w-5/6 mx-auto p-3">
+    <h1 class="font-bold text-xl">Question-4: What is event bubbling in the DOM?</h1>
+    <div class="border-t-2 border-dotted border-blue-50 my-2"></div>
+    <p>   Ans:Event bubbling is a behavior where an event starts from the target element and propagates upwards to its ancestors.</p>
+   </div>
+   <div class="bg-white mb-4 rounded-sm w-5/6 mx-auto p-3">
+    <h1 class="font-bold text-xl">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+    <div class="border-t-2 border-dotted border-blue-50 my-2"></div>
+    <p>
+       Ans: Use appendChild for adding, remove() for quick removal, and removeChild() for controlled deletions.
+    </p>
+   </div>
+   <script src="./script/script.js"></script>
+</body>
+</html>
