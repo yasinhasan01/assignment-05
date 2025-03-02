@@ -198,10 +198,9 @@ document.getElementById('newPage').addEventListener('click', function() {
     
     window.location.href = './blog.html'; 
 });
-document.getElementById('back').addEventListener('click', function() {
-   
-    window.location.href = './index.html'; 
-});
+// document.getElementById('back').addEventListener('click', function() {
+//     window.location.href = './index.html'; 
+// });
 function randomColor() {
     let random = '#' + Math.floor(Math.random()*16777215).toString(16);
     document.body.style.backgroundColor = random;
